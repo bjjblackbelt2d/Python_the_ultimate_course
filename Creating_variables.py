@@ -203,4 +203,12 @@ while(1):
                 state=1
         print("Right NOw you are in state:", state)
         
+        ## Enumerate
         
+    cars = ["BMW", "Hyundai", "Toyota", "Jaguar"]
+    
+    for i, items in enumerate(cars):
+        print(items)
+        print(i)
+        
+    
