@@ -226,3 +226,14 @@ for i in range (0, len(a) ):
     a[1] = a[i] + 2
     
 print(a)
+
+shapes = ["square", "circle", "triangle"]
+centers = [ (10,10), (50,50), (100,100)]
+colors = ["red", "blue", "yellow"]
+
+#for i in range (0, len(shapes)):
+#   print(shapes[1], centers[1])
+
+for shape, center, color in zip(shapes, centers, colors):
+    print(shape, center, color)
+    
