@@ -211,4 +211,18 @@ while(1):
         print(items)
         print(i)
         
+l = ["apples", "bananas", "strawberries"]
+ 
+for element in l:
+    print(element)
     
+a = [1,3,5,7,9]
+
+for element in a:
+    element= element+2
+    print(element)
+    
+for i in range (0, len(a) ):
+    a[1] = a[i] + 2
+    
+print(a)
