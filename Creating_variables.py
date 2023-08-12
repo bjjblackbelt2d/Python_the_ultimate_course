@@ -266,4 +266,36 @@ for i in range(0 , len(imagePixels)):
     
 print(imagePixels)
 
+## functions
+
+db1=["kate", "Moss", "David"]
+db2=["Lee", "Steve"]
+db3=["Tony", "Lara"]
+
+def addToDatabase(name):
+    
+    global db1
+    global db2
+    global db3
+    
+    db1=[name]
+    db2=[name]
+    db3=[name]
+    
+    
+addToDatabase('John')
+addToDatabase("MrHamsho")
+print("Db 1 is:", db1)
+print("Db 2 is:", db2)
+print("Db 3 is:", db3)
+
+def pwr2(num):
+    pw2= num*num
+    div = num/num
+    return pw2, div
+
+pw2, div= pwr2(5)
+print("pw2 is ", pw2)
+print("div is ", div)
+
 
