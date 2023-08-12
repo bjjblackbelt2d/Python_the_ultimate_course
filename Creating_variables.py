@@ -237,3 +237,8 @@ colors = ["red", "blue", "yellow"]
 for shape, center, color in zip(shapes, centers, colors):
     print(shape, center, color)
     
+s= "This is nice"
+#print(s)
+
+li0ifNumbers = [x for x in range(10) if x%2 ==0]
+print(li0ifNumbers)
