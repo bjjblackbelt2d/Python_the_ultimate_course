@@ -117,4 +117,60 @@ elif grade>55:
     print("You Got an F! You suck!")
   
   
-  
+## lists
+
+names= ["James","Elli","MrHamsho","Adem","Aida"]
+ages= [24, 25, 21, 48, 17]
+print(names[5], ages[5] )
+
+## list append
+
+shoppingCart = ['Oranges', 'Milk', 'Almonds']
+
+item = input("please enter the name of the product:")
+shoppingCart.append(item)
+
+item = input("please enter the name of the product:")
+shoppingCart.append(item)
+
+item = input("please enter the name of the product:")
+shoppingCart.append(item)
+
+print("Your items are:", shoppingCart)
+
+shoppingCart = ['Oranges', 'Milk', 'Almonds']
+shoppingCart.clear()
+print(shoppingCart)
+
+shoppingCart = ['Oranges', 'Milk', 'Almonds']
+shoppingCart.remove("Almond")
+print(shoppingCart)
+
+shoppingCart = ['Oranges', 'Milk', 'Almonds']
+
+shoppingCart.pop()
+print(shoppingCart)
+
+shoppingCart = ['Oranges', 'Milk', 'Almonds']
+
+length = len(shoppingCart)
+print(length)
+
+shoppingCart.clear()
+
+if len(shoppingCart) == 0:
+    print("Your shopping cart is empty!")
+
+database = [ ["John", "MrHamsho"]  , [25, 29] ]
+
+print(database[0][1])
+print(database[1][1])
+
+while(1):
+    userInput = input("Enter a letter")
+    print(userInput)
+    
+    if userInput == 'exit':
+        break 
+    
+t = ("A", "B", "C")
