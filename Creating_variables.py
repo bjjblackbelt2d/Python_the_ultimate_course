@@ -174,3 +174,33 @@ while(1):
         break 
     
 t = ("A", "B", "C")
+
+## finite machines
+
+state=1
+while(1):
+    transit = input("Enter a letter: ")
+    print("You have entered", state)
+    
+    if state == 1:
+        if transit == 'W':
+            state = 2
+
+    elif state == 2:
+    
+        if transit == 'G':
+            state = 3
+        
+        elif state == 2:
+            if transit == 'G':
+                state= 3
+            
+            elif transit == 'S':
+                state=1
+                
+        elif state == 3:
+            if transit == 'L':
+                state=1
+        print("Right NOw you are in state:", state)
+        
+        
