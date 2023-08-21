@@ -929,3 +929,17 @@ lines= ['\n', "new line 1", "new line 2"]
 with open('writeTHisNow.txt', 'w') as f:
     f.writelines( '\n'.join(lines))
     
+xcord = []
+ycord = []
+with open('data.txt', 'r') as file:
+    data = file.read()
+
+coordinates = data.split('\n')
+for c in coordinates:
+    x,y = c.split(',')
+    xcord.append(x)
+    ycord.append(y)
+    
+print("my x are:", xcord)
+print("my y are:", ycord)
+
