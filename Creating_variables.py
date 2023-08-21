@@ -917,3 +917,15 @@ with open('readthis.txt',"r") as f:
 print(readByte)
 print(readOneLine)
 print(readAllLines)
+
+lines = [ "lines 1", "line 2", "line 3"]
+
+with open('writeThisNow.txt', 'W') as f:
+    
+    f.writelines( '\n' .join(lines))
+    
+lines= ['\n', "new line 1", "new line 2"]
+
+with open('writeTHisNow.txt', 'w') as f:
+    f.writelines( '\n'.join(lines))
+    
