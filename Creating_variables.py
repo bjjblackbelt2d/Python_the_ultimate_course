@@ -943,3 +943,13 @@ for c in coordinates:
 print("my x are:", xcord)
 print("my y are:", ycord)
 
+from zipfile import ZipFile
+
+ 
+with ZipFile("Unzip.zip", 'r') as zip:
+ 
+ 
+    zip.extractall()
+    print('Files extracted!')
+    
+    
