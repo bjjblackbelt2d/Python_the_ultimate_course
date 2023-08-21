@@ -952,4 +952,11 @@ with ZipFile("Unzip.zip", 'r') as zip:
     zip.extractall()
     print('Files extracted!')
     
+from zipfile import ZipFile
+
+with ZipFile('ZippedFiles.zip', 'w') as zip:
+    zip.write("New Folder")
+    
+    
+    
     
