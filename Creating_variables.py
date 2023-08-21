@@ -906,3 +906,14 @@ print(aEmployee._age)
  "nbformat": 4,
  "nbformat_minor": 5
 }
+
+with open('readthis.txt',"r") as f:
+    readByte = f.read(8)
+    f.seek(0)
+    readOneLine = f.readline()
+    f.seek(0)
+    readAllLines= f.readlines()
+    
+print(readByte)
+print(readOneLine)
+print(readAllLines)
