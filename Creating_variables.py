@@ -452,7 +452,6 @@ x = lambda x: x/10
 
 print(xx(50))
 
-l = ['a','b','c',' ',' ']
 
 filteredList = list(filter(lambda x: x!=' ',l))
 print(filteredList)
@@ -460,3 +459,147 @@ print(filteredList)
 appendList = list(map(lambda x: x+"d",l))
 print(appendList)
 
+class motor:
+    
+    
+    def _init_(self):
+        pass
+    
+    def turnOn(self):
+        print("motor is on")
+        
+    def turnOff(self):
+        print("motor is off")
+        
+    def ChangeSpeed(self):
+        print("speed Changed")
+        
+    def ChangeRotationDir(self):
+        print("Dir Changed")
+        
+fan = motor()
+
+fan.turnOn()
+
+washingMachine = motor()
+washingMachine.changeSpeed()
+
+
+    
+def _init_(self, startButton, stopButton, ChangeDIr, ChangeSpeed):
+    
+    self._startButton = startButton
+    self._stopButton = stopButton
+    self._changeDIr = ChangeDIr
+    self._changeSpeed = ChangeSpeed
+    
+def turnOn(self):
+    if self._stopButton ==1:
+        self._stopButton = 0
+    self._startButton = True
+    print("Motor Is On")
+    
+def turnOff(self):
+    if self._startButton == 1:
+        self._startButton = 0
+    self._startButton = True
+    print("Motor Is On")
+    
+def turnOff(self):
+    if self._startButton == 1:
+        self._startButton = 0
+    self._stopButton = True
+    
+    print("Motor Is Off")
+    
+def changeSpeed(self, value):
+    self._changeSpeed = value
+    print("Speed Changed")
+    
+#0 clockwise rotation , 1 anti-clockwise rotation
+def changeRotationDir(self, value):
+    self._changeDir = value 
+    print("Dir Changed")
+    
+    
+fan = motor(0,0,0,0)
+print("startButton is :", fan._startButton)
+fan.turnOn()
+print("startButton is :",fan._startButton)
+fan.turnOff()
+print("stopButton is ",fan._stopButton)
+print("startButton is:",fan._startButton)
+
+fan.changeSpeed(50)
+print(fan._changeSpeed)
+
+fan.changeRotationDir(1)
+print(fan._changeDir)
+
+class employee :
+    
+    def _init_(self):
+        pass
+    
+    def accessMeetingRoom(self):
+        print("acceessMeetingRoom")
+    
+    def accessKitchen():
+        print("accessKitchen")
+        
+    def accessPersonalOffice(self):
+        print("accessPersonalOffice")
+        
+class advancedEmployee(employee):
+    
+    def accessPrivateMeetingRoom(self):
+        print("accessPrivateMeetingRoom")
+        
+employee4 = advancedEmployee()
+
+employee4.accessMeetingRoom()
+employee4.accessPrivateMeetingRoom()
+
+def _init_(self, name, age):
+    self._name- name
+    self._age= age
+    
+def accessMeetingRoom(self):
+    print("accessMeetingRoom")
+    
+def accessKitchen():
+    print("accessKitchen")
+    
+def accessPersonalOffice(self):
+    print("accessPersonalOffice")
+    
+class advancedEmployee(employee):
+    
+    def _init_(self ,businessNumber, *args, **kwargs, ):
+        self._businessNumber= businessNumber
+        super()._init_(*args, **kwargs)
+        
+        
+    def accessPrivateMeetingRoom(self):
+        print("accessPrivateMeetingRoom")
+        
+        
+class advancedEmployee(employee):
+    
+    def _init_(self ,businessNumber, *args, **kwargs, ):
+        self._businessNumber= businessNumber
+        super()._init_(*args, **kwargs)
+        
+    def accessPrivateMeetingRoom(self):
+        print("accesssPrivateMeetingRoom")
+        
+        
+aEmployee = advancedEmployee(7891,"John",25, )
+print(aEmployee._name)
+print(aEmployee._businessNumber)
+print(aEmployee._age)
+
+
+
+
+        
