@@ -1001,3 +1001,11 @@ arr = np.arrange(22)
 arr = np.arrange(0,10,3, np.int32)
 print(type(arr[0]))
 print(arr)
+
+arr = np.array([[1,2,3,4], [5,6,7,8] ], np.int64)
+print(arr.shape)
+print(arr.ctype)
+
+arr = np.array(["john","jake","jack","jordan"])
+index= np.where(arr=="jordan")
+print(index[0][1])
