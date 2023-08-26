@@ -1039,3 +1039,10 @@ splitting= np.hsplit(a, 3)
 print(splitting[0])
 print(splitting[1])
 print(splitting[2])
+
+randArr=np.random.default_rng().integers(10, size=(5,8))
+def new_func():
+    return ().update_xaxes
+autorange=True
+        
+print(new_func())
