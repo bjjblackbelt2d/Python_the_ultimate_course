@@ -1033,4 +1033,9 @@ c= np.array([20,30,1])
 c= np.concatenate([b,a,dataclasses])
 print(c)
 
+a= np.array([50,2,1,2,1,7,9,2,1])
 
+splitting= np.hsplit(a, 3)
+print(splitting[0])
+print(splitting[1])
+print(splitting[2])
