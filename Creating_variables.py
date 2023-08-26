@@ -1009,3 +1009,14 @@ print(arr.ctype)
 arr = np.array(["john","jake","jack","jordan"])
 index= np.where(arr=="jordan")
 print(index[0][1])
+
+arr = np.array([50,20,30,91,101,2])
+
+maximum= np.amax(arr)
+print(maximum)
+
+minimum = np.amin(arr)
+print(minimum)
+
+
+
