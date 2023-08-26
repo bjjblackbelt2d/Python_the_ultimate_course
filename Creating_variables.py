@@ -983,3 +983,21 @@ print("The Subtraction is:", input1-input2)
 print("The Multiplication is:", input1*input2)
 print("The Division is:", input1/input2)
 print("done executing")
+
+import numpy as np 
+
+arr = np.array([5,10,15,20,25])
+l = [5,10,15,20,25]
+
+l = np.array(l)
+
+arr = np.zeros(5)
+print(arr)
+arr = np.ones(20)
+print(arr)
+
+arr = np.arrange(22)
+
+arr = np.arrange(0,10,3, np.int32)
+print(type(arr[0]))
+print(arr)
